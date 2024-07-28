@@ -21,6 +21,13 @@ prompt_for_input() {
     echo $input
 }
 
+echo "Installing dependencies..."
+npm install --save-dev hardhat
+npm install dotenv
+npm install @swisstronik/utils
+npm install @openzeppelin/contracts
+echo "Installation completed."
+
 print_blue "Installing Hardhat and necessary dependencies..."
 echo
 npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
